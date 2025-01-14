@@ -1,0 +1,397 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&family=Poppins:wght@200&display=swap');
+
+
+
+body{
+  background-image: url(./imagens/07a2557f-49fe-421a-a9c0-210f7d0588b0.jpg.png);
+  height: 900px;
+  background-size: cover;
+  padding-top: 1px;
+  background-attachment: fixed;
+ 
+}
+ 
+.nav-bar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 25px;
+    font-family: 'Poppins', sans-serif;
+    font-size: 2.3em;
+   
+}
+
+.nav-item{
+  display: flex;
+}
+
+.nav-list {
+    align-items: center;
+    display: flex;
+    margin-right: 1rem;
+  
+}
+
+.nav-item:hover {
+  background-color: color-mix(in srgb, rgb(174, 123, 236), white 20%);
+  transform: translate(-3px, -3px);
+  border-radius: 5px;
+  transition: transform .3s;
+}
+
+
+.logo {
+    display: flex;
+    justify-content: space-around;
+}
+
+.logo h1 {
+    color: rgb(159, 99, 233);
+}
+
+.nav-list ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+}
+
+.nav-item {
+    margin: 0 15px;
+}
+
+.nav-link {
+    text-decoration: none;
+    font-size: 1.15rem;
+    color: white;
+    font-weight: 400;
+}
+
+.mobile-menu-icon {
+    display: none;
+}
+
+.mobile-menu {
+    display: none;
+}
+
+@media screen and (max-width: 730px) {
+    
+    .nav-item {
+        display: none;
+        padding: 15px 20px;
+        
+    }
+    
+    .mobile-menu-icon {
+        display: block;
+    }
+    
+    .mobile-menu-icon button {
+        background-color: transparent;
+        border: none;
+        cursor: pointer;
+    }
+    
+    .mobile-menu ul {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        padding-bottom: 1rem;
+    }
+    
+    .mobile-menu .nav-item {
+        display: block;
+        padding-top: 1.2rem;
+    }
+    
+    .open {
+        display: block;
+    }
+}
+    
+h1{
+  font-family: 'Poppins', sans-serif;
+  font-size: 2.0em;
+}
+
+h2{
+  color: rgb(154, 82, 202);
+  font-family: 'Poppins', sans-serif;
+  font-size: 2.4em;
+}
+
+article p{
+  font-family: 'Poppins', sans-serif;
+  font-size: 1.6em;
+}
+
+section p{
+  font-family: 'Poppins', sans-serif;
+  font-size: 1.8em;
+}
+
+h3{
+  font-family: 'Poppins', sans-serif;
+  font-size: 1.8em;
+}
+
+ article{
+  display: flex;
+  justify-items: space-between;
+  align-items: center;
+  gap: 4rem;
+  scroll-margin-top: 20rem;
+}
+
+ article .header__left {
+  max-width: 62rem;
+  flex: 1;
+}
+
+article .header__left p {
+  margin-top: 2rem;
+  margin-bottom: 4rem;
+  max-width: 50rem;
+}
+
+article .header__right .header__image{
+  position: relative;
+  line-height: 0;
+}
+
+article .header__right .header__image::after {
+  content: '';
+  display: block;
+  height: 0.8em;
+  border: 1px;
+  position: absolute;
+  top: -1.5rem;
+  right: -1.5rem;
+  border-radius: 4.5rem;
+  z-index: -1;
+}
+
+article .header__right .header__image .beatriz {
+  border-radius: 0.5rem;
+  min-width: 25rem;
+  max-width: 100%;
+}
+
+@media only screen and (max-width: 768px) {
+  header {
+    flex-direction: column-reverse;
+    text-align: center;
+  }
+
+  header .header__left p {
+    margin: 2rem auto 4rem;
+  }
+}
+
+.about {
+  display: flex;
+  justify-content: space-between;
+  gap: 4rem;
+  scroll-margin-top: 20rem;
+}
+
+.about .about__left {
+  max-width: 40rem;
+  flex: 1;
+}
+
+.about .about__left p {
+  margin: 1rem 0 2rem;
+}
+
+.about .about__left ul {
+  margin-left: -1.2rem;
+}
+
+.about .about__left ul li {
+  display: inline-block;
+}
+
+.about .about__left ul li a {
+  display: inline-block;
+  padding: 1rem;
+}
+
+.about .about__right {
+  flex: 1;
+  max-width: 66rem;
+}
+
+@media only screen and (max-width: 768px) {
+  .about {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .about .about__left {
+    max-width: 66rem;
+    text-align: center;
+  }
+
+  .about .about__right {
+    text-align: center;
+  }
+}
+
+.skills {
+  background-color: var(--light-tertiary-color);
+  scroll-margin-top: 15rem;
+}
+
+.skills .skills__content {
+  padding: 6rem 4rem;
+  text-align: center;
+}
+
+.skills .skills__content .description {
+  max-width: 56rem;
+  margin: 0 auto 6rem;
+}
+
+.skills .skills__content ul {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+  gap: 2rem;
+}
+
+.skills .skills__content ul li .image-container {
+  padding: 2rem;
+  border-radius: 50%;
+  width: 7rem;
+  height: 7rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0 0.4rem 1rem rgba(0, 0, 0, 0.1);
+  margin: 0 auto;
+}
+
+.skills .skills__content ul li h3 {
+  font-size: 1.6rem;
+  font-weight: 500;
+  margin: 2rem 0 1rem;
+}
+
+.projects {
+  margin-bottom: 16rem;
+  scroll-margin-top: 15rem;
+}
+
+.projects .projects__content {
+  max-width: 56rem;
+  text-align: center;
+  margin: 0 auto 6rem;
+
+}
+
+#projects ul a{
+  background-color: rgb(192, 124, 241);
+  color: white;
+  justify-content: space-evenly;
+  display: block;
+  list-style-type: none;
+  text-decoration: none;
+  border-radius: 4px;
+  
+}
+
+#projects ul a:hover {
+  transform: translate(-2px, -2px);
+  transition: transform.3s;
+}
+
+
+.projects ul li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 4rem;
+}
+
+.projects ul li.projects__reversed-list {
+  flex-direction: row-reverse;
+}
+
+.projects ul li:not(:last-of-type) {
+  margin-bottom: 12rem;
+}
+
+.projects ul li .image img {
+  width: 100%;
+  min-width: 40rem;
+  max-width: 47rem;
+  height: auto;
+}
+
+.projects ul li .projects__info {
+  max-width: 47rem;
+}
+
+.projects ul li .projects__info p {
+  margin: 1rem 0 4rem;
+}
+
+.projects ul li .projects__info a {
+  font-weight: 500;
+  text-decoration: underline;
+}
+
+iframe {
+  width: 86vw;
+  height: 70vh;
+  scroll-padding: 0px;
+  margin: 0px;
+  padding: 0px;
+  border: 1px solid rgba(0, 0, 0, 0.281);
+}
+
+@media only screen and (max-width: 768px) {
+  .projects ul li,
+  .projects ul li.projects__reversed-list {
+    flex-direction: column;
+  }
+
+  .projects ul li .projects__info {
+    max-width: 66rem;
+  }
+
+  .projects ul li .image img {
+    min-width: auto;
+  }
+}
+
+footer {
+ justify-content: center;
+  display: flex;
+}
+
+footer .footer__content {
+  text-align: center;
+  padding: 6rem 2rem 1rem;
+  max-width: 47rem;
+}
+
+footer .footer__content .footer__contact span {
+  display: block;
+  font-weight: 500;
+}
+
+footer .footer__content ul li a {
+  display: inline-block;
+  text-align: left;
+}
+
+footer .footer__content ul a {
+  display: flex;
+  gap: 16px;
+  justify-content: space-evenly;
+}
+
+footer .footer__content .footer__copyright {
+  font-size: 1.4rem;
+}
